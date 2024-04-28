@@ -65,12 +65,6 @@
 ;; (load "C:\\Users\\marsa\\AppData\\Roaming\\.emacs.d\\funktree.el") ;
 ;; (global-set-key (kbd "C-c 1") 'funk)
 
-;; Load theme
-;;(use-package doom-themes
-;;  :ensure t
-;;  :config
-;;  (load-theme 'doom-one t)) ; Change 'doom-one to your preferred doom theme
-;; (load-theme 'tango-dark t)
 (load-theme 'gruber-darker t)
 
 (global-git-gutter-mode +1)
