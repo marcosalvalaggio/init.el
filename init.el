@@ -35,6 +35,15 @@
 
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 
+(defun my-html-mode-hook ()
+  "Customize HTML mode."
+  (setq sgml-basic-offset 4) ;; Set indentation to 4 spaces
+  (setq-default tab-width 4) ;; Set tab width to 4 spaces
+  (setq indent-tabs-mode nil) ;; Use spaces instead of tabs for indentation
+  (electric-indent-local-mode 1))
+
+(add-hook 'html-mode-hook 'my-html-mode-hook)
+
 (defun insert-four-spaces ()
   "Insert four spaces."
   (interactive)
