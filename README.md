@@ -6,3 +6,4 @@
 * company 
 * git-gutter 
 * indent-guide
+/Appdata/Roaming/.emacs.d/init.el
