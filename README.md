@@ -2,5 +2,5 @@
 
 
 <h1 align="center">
-<img src="example.png" width="380">
+<img src="example.png" width="600">
 </h1><br>
