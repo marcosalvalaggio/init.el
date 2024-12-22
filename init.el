@@ -9,7 +9,7 @@
 (menu-bar-mode 0)                              ;; Disable menu bar
 (tool-bar-mode 0)                              ;; Disable tool bar
 (add-to-list 'default-frame-alist '(fullscreen . maximized)) ;; Start maximized
-(set-frame-font "Hack Nerd Font Mono-12")      ;; Set default font
+(set-frame-font "Hack Nerd Font Mono-10")      ;; Set default font
 (load-theme 'manoj-dark t)                     ;; theme
 (global-display-line-numbers-mode)
 
@@ -39,6 +39,7 @@
 (add-hook 'html-mode-hook (lambda () (my-setup-indent 2)))
 (add-hook 'xml-mode-hook (lambda () (my-setup-indent 2)))
 (add-hook 'emacs-lisp-mode-hook (lambda () (my-setup-indent 2)))
+(add-hook 'scheme-mode-hook (lambda () (my-setup-indent 2)))
 
 ;; Smooth scroll
 (setq scroll-step 3)
@@ -66,4 +67,11 @@
 ;; Powershell command keybind
 (global-set-key (kbd "C-c C-x") 'execute-powershell-command)
 
+;; get funciont name in file
+(global-set-key (kbd "M-j") 'imenu)
 
+;; Bind Alt-m (M-m) to switch windows
+(global-set-key (kbd "M-7") 'other-window)
+
+;; Bind Alt-q (M-q) to kill the current buffer without saving
+(global-set-key (kbd "M-q") 'kill-buffer)
