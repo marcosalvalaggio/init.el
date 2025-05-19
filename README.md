@@ -1,5 +1,4 @@
-## A personal guide to emacs
-
+A Personal Experimentation with Emacs for Windows
 
 <h1 align="center">
 <img src="example.png" width="600">
